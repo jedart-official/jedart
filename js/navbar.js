@@ -1,4 +1,5 @@
-// Вызываем эту функцию, если нам нужно зафиксировать меню при скролле.
+const menuItems = document.querySelectorAll('.classic-menu__item');
+const sections = document.getElementsByTagName('section');
 function fixedNav() {
   const nav = document.querySelector('.header__wrapper')
   const breakpoint = 50;
@@ -10,4 +11,11 @@ function fixedNav() {
 }
 window.addEventListener('scroll', fixedNav)
 
-
+function menuNavigation(){
+  const menuItemsList = [...menuItems];
+  menuItems.forEach((menuItem) => {
+    menuItem.addEventListener('click', ()=> {
+      sections[menuItemsList.indexOf(menuItem)].scrollIntoView({'block' : 'center'})
+    })
+  })
+}

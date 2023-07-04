@@ -35,6 +35,7 @@ function scrollMenu(menuItems) {
                 toggleActiveItem(activeItemIndex, items, menuItemActiveClass);
                 activeItemIndex += e.deltaY > 0 ? 1 : -1;
                 toggleActiveItem(activeItemIndex, items, menuItemActiveClass);
+                runAnimation();
             }
         }
     });
