@@ -28,11 +28,16 @@ main {
   max-width: 1500px;
   margin: 0 auto;
   width: 100%;
-  padding: 0px 60px;
+  padding: 40px 60px;
 }
 @media (max-width: 680px) {
   main {
     padding: 40px 30px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding: 20px;
   }
 }
 
@@ -214,7 +219,7 @@ main {
 }
 @media (max-width: 480px) {
   .about {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
 .about .wrapper {
@@ -450,7 +455,6 @@ main {
   width: 120px;
   display: flex;
   transition: unset;
-  opacity: 0;
   align-items: center;
 }
 .skills__item svg {
