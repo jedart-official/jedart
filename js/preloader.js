@@ -1,4 +1,6 @@
 const preloader = document.querySelector('.preloader')
 document.addEventListener('DOMContentLoaded', () => {
-    preloader.classList.add('preloader_hidden')
+    setTimeout(()=> {
+        preloader.classList.add('preloader_hidden')
+    }, 1000)
 })
