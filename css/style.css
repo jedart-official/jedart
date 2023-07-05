@@ -332,6 +332,11 @@ main {
   display: block;
   color: #FFFFFF;
 }
+@media (max-width: 780px) {
+  .classic-menu__item {
+    margin-left: unset;
+  }
+}
 .classic-menu__item:hover {
   color: #EB6B6B;
 }
