@@ -60,7 +60,6 @@ function typeWriter() {
 }
 
 function runAnimation() {
-    if (isVisible(aboutSection)) aboutAnimation();
     if (isVisible(servicesSection)) servicesAnimation();
     if (isVisible(skillsSection)) skillsAnimation();
     if (isVisible(examplesSection)) examplesAnimation();

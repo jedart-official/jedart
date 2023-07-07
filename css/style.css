@@ -690,7 +690,25 @@ main {
   left: 0;
   transition: 0.3s all ease;
   bottom: 0;
-  background: rgba(83, 83, 83, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  background: rgba(49, 49, 49, 0.85);
+}
+.examples__item-name {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.examples__item-description {
+  font-size: 14px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #C4C4C4;
 }
 
 .content_classic .examples {
