@@ -1,7 +1,8 @@
-const preloader = document.querySelector('.preloader')
-document.addEventListener('DOMContentLoaded', () => {
+const preloader = document.querySelector('.preloader');
+const background = document.querySelector('.background');
+window.addEventListener('load', function() {
+    background.style.display = 'block';
     setTimeout(()=> {
         preloader.classList.add('preloader_hidden')
-        aboutAnimation();
-    }, 1000)
-})
+    }, 500)
+});
