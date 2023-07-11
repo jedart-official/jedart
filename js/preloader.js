@@ -4,5 +4,6 @@ window.addEventListener('load', function() {
     background.style.display = 'block';
     setTimeout(()=> {
         preloader.classList.add('preloader_hidden')
+        aboutAnimation();
     }, 500)
 });
